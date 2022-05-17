@@ -43,7 +43,7 @@ Install pre-requisites if needed:
   terraform {
     required_version = "~> 1.1.0"
     backend "s3" {
-      bucket = "terraform.aptos-node"
+      bucket = <bucket name> # bucket name created in step 2
       key    = "state/aptos-node"
       region = <aws region>
     }
